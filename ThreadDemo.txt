@@ -1,0 +1,26 @@
+public class ThreadCode extends Thread
+  {
+
+      public void run()
+      {
+     for(int i=0; i<3; i++)
+     System.out.print(" 1 ");
+     try
+     {
+     Thread.sleep(6000);
+     }
+     catch(InterruptedException e)
+     {
+     e.printStackTrace();
+     }
+ }
+
+
+public static void main(String[] args)
+{
+ThreadCode t1 = new ThreadCode();
+t1.start();
+
+}
+
+}
